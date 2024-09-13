@@ -87,8 +87,9 @@ WSGI_APPLICATION = 'empresaDjango.wsgi.application'
 
 DATABASES = {
    'default': dj_database_url.config (
-    #    default = 'postgresql://postgres_user:P0$tgr3$@localhost:5432/empresadjango',
-       default = 'postgresql://postgres_user:33ZxkwDDzAmtwcRsokevW5XYC2cWgheO@dpg-crhufvbtq21c7383fid0-a/empresadjango',
+    #    default = 'postgresql://postgres_user:P0$tgr3$@localhost:5432/empresadjango', # localhost
+       default = 'postgresql://postgres_user:33ZxkwDDzAmtwcRsokevW5XYC2cWgheO@dpg-crhufvbtq21c7383fid0-a/empresadjango', # internal render
+    #    default = 'postgresql://postgres_user:33ZxkwDDzAmtwcRsokevW5XYC2cWgheO@dpg-crhufvbtq21c7383fid0-a.frankfurt-postgres.render.com/empresadjango', # external render
        conn_max_age = 600,
    )
 }
