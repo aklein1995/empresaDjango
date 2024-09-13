@@ -1,0 +1,1 @@
+[{"model": "appEmpresaDjango.departamento", "pk": 1, "fields": {"nombre": "Dep1", "telefono": 944139000}}, {"model": "appEmpresaDjango.departamento", "pk": 2, "fields": {"nombre": "Dep2", "telefono": 944139000}}]

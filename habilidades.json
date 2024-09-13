@@ -1,0 +1,1 @@
+[{"model": "appEmpresaDjango.habilidad", "pk": 1, "fields": {"nombre": "Hab1"}}, {"model": "appEmpresaDjango.habilidad", "pk": 2, "fields": {"nombre": "Hab2"}}]
