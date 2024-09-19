@@ -6,7 +6,8 @@ from .models import Departamento, Habilidad, Empleado
 
 def home(request):
 	departamentos = get_list_or_404(Departamento.objects.order_by('nombre'))
-	empleadosFiltrados = Empleado.objects.raw('SELECT * FROM( SELECT * FROM appEmpresaDjango_Empleado ORDER BY antiguedad DESC) GROUP BY departamento_id ')
+	# empleadosFiltrados = Empleado.objects.raw('SELECT * FROM "appEmpresaDjango_empleado" ORDER BY departamento_id ASC, antiguedad DESC')
+	empleadosFiltrados = Empleado.objects.order_by('departamento_id','-antiguedad')
 	context = {'empleadosFiltrados': empleadosFiltrados }
 	return render(request, 'home.html', context)
 
